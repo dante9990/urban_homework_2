@@ -4,35 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Frontend Разработка</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#introduction">Введение</a></li>
-                <li><a href="#tools">Инструменты</a></li>
-                <li><a href="#languages">Языки</a></li>
-                <li><a href="./second_page.html">Перейти на 2ю страницу</a></li>
-                <li><a href="./third_page.html">Оставить комментарий</a></li>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list-item"><a href="#introduction">Введение</a></li>
+                <li class="nav__list-item"><a href="#tools">Инструменты</a></li>
+                <li class="nav__list-item"><a href="#languages">Языки</a></li>
+                <li class="nav__list-item"><a href="./second_page.html">Перейти на 2ю страницу</a></li>
+                <li class="nav__list-item"><a href="./third_page.html">Оставить комментарий</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Frontend Разработка</h1>
-        <section id="introduction">
-            <h2>Введение в Frontend Разработку</h2>
+    <main class="main">
+        <h1 class="title">Frontend Разработка</h1>
+        <section class="section" id="introduction">
+            <h2 class="section__title">Введение в Frontend Разработку</h2>
             <p>
                 Frontend разработка отвечает за создание интерфейса
                 пользовательской части веб-сайта или веб-приложения.
                 Она включает в себя работу с HTML, CSS и JavaScript
             </p>
         </section>
-        <section id="languages">
-            <h2>Языки Frontend Разработки</h2>
+        <section class="section" id="languages">
+            <h2 class="section__title">Языки Frontend Разработки</h2>
             <p>Основными языками Frontend разработки являются:</p>
-            <ul>
+            <ul class="section__ul">
                 <li>HTML (HyperText Markup Language) - используется для структурирования содержимого веб-страницы;</li>
                 <li>CSS (Cascading Style Sheets) - используется для стилизации веб-страницы и создание ее внешнего вида
                 </li>
@@ -40,146 +41,130 @@
                     обработка событий и динамическое обновление содержимого</li>
             </ul>
         </section>
-        <section id="tools">
-            <h2>Инструменты Frontend Разработки</h2>
-            <ol>
+        <section class="section" id="tools">
+            <h2 class="section__title">Инструменты Frontend Разработки</h2>
+            <ol class="section__ol">
                 <li>Visual Studio Code - Мощный редактор кода с поддержкой множества языков и плагинов</li>
                 <li>React - библеотека для создания пользовательских интерфейсов</li>
                 <li>Sass - препроцессор CSS с расширенными возможностями</li>
                 <li>Webpack - Сборщик модулей для JavaScript приложений</li>
             </ol>
-            <table border="1" width="700">
-                <thead>
-                    <tr>
-                        <th colspan="2">Навыки</th>
-                        <th>Junior</th>
-                        <th>Middle</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th rowspan="6">HTML</th>
-                        <td>Верстка основных элементов</td>
-                        <td align="center"><input type="checkbox" checked></td>
-                        <td align="center"><input type="checkbox" checked></td>
-                    </tr>
-                    <tr>
-                        <td>Собллюдение семантики</td>
-                        <td align="center"><input type="checkbox" checked></td>
-                        <td align="center"><input type="checkbox" checked></td>
-                    </tr>
-                    <tr>
-                        <td>Доступность сайта</td>
-                        <td align="center">базовые знания</td>
-                        <td align="center">продвинутые знания</td>
-                    </tr>
-                    <tr>
-                        <td>Шаблонизаторы (Pug, Twig)</td>
-                        <td align="center"><input type="checkbox"></td>
-                        <td align="center"><input type="checkbox" checked></td>
-                    </tr>
-                    <tr>
-                        <td>Микроразметка</td>
-                        <td align="center"><input type="checkbox"></td>
-                        <td align="center"><input type="checkbox" checked></td>
-                    </tr>
-                    <tr>
-                        <td>Верстка под React (JSX и CSS-in-JS)</td>
-                        <td align="center"><input type="checkbox" checked></td>
-                        <td align="center"><input type="checkbox" checked></td>
-                    </tr>
-                    <tr>
-                        <th rowspan="6">CSS</th>
-                        <td>Сетки (Flex, Grid)</td>
-                        <td align="center"><input type="checkbox" checked></td>
-                        <td align="center"><input type="checkbox" checked></td>
-                    </tr>
-                    <tr>
-                        <td>Работа со шрифтами</td>
-                        <td>Вариативные шрифты</td>
-                        <td>Оптимизация шрифтов</td>
-                    </tr>
-                    <tr>
-                        <td>Препроцессоры SASS, Less, PostCSS</td>
-                        <td align="center"><input type="checkbox"></td>
-                        <td align="center"><input type="checkbox" checked></td>
-                    </tr>
-                    <tr>
-                        <td>Методологии БЭМ</td>
-                        <td align="center"><input type="checkbox" checked></td>
-                        <td align="center"><input type="checkbox" checked></td>
-                    </tr>
-                    <tr>
-                        <td>Фреймфорк Bootstrap</td>
-                        <td align="center"><input type="checkbox" checked></td>
-                        <td align="center"><input type="checkbox" checked></td>
-                    </tr>
-                    <tr>
-                        <td>Фреймфорк Tailwind CSS</td>
-                        <td align="center"><input type="checkbox"></td>
-                        <td align="center"><input type="checkbox" checked></td>
-                    </tr>
-                    <tr>
-                        <th rowspan="6">JavaScript</th>
-                        <td>Базовый синтаксис и конструкции</td>
-                        <td align="center"><input type="checkbox"></td>
-                        <td align="center"><input type="checkbox" checked></td>
-                    </tr>
-                    <tr>
-                        <td>React</td>
-                        <td align="center"><input type="checkbox" checked></td>
-                        <td align="center"><input type="checkbox" checked></td>
-                    </tr>
-                    <tr>
-                        <td>TypeScript</td>
-                        <td align="center"><input type="checkbox" checked></td>
-                        <td align="center"><input type="checkbox" checked></td>
-                    </tr>
-                    <tr>
-                        <td>StateManagemt (Redux, Mobx)</td>
-                        <td align="center"><input type="checkbox"></td>
-                        <td align="center"><input type="checkbox" checked></td>
-                    </tr>
-                    <tr>
-                        <td>SSR (Next.js)</td>
-                        <td align="center"><input type="checkbox"></td>
-                        <td align="center"><input type="checkbox" checked></td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th colspan="2">Итого:</th>
-                        <td align="center">опыт < 1 года</td>
-                        <td align="center">опыт 1 - 3 года</td>
-                    </tr>
-                </tfoot>
-            </table>
+            <div class="table">
+                <div class="table__title_skills">Навыки</div>
+                <div class="table__title_jun">Junior</div>
+                <div class="table__title_midl">Middle</div>
+
+                <div class="html">
+                    <div class="html__title">HTML</div>
+                    <div class="html__skills">
+                        <div class="skill">Верстка основных элементов</div>
+                        <div class="skill">Собллюдение семантики</div>
+                        <div class="skill">Доступность сайта</div>
+                        <div class="skill">Шаблонизаторы (Pug, Twig)</div>
+                        <div class="skill">Микроразметка</div>
+                        <div class="skill">Верстка под React (JSX и CSS-in-JS)</div>
+                    </div>
+                    <div class="html__checks-jun">
+                        <div class="check"><input type="checkbox" checked></div>
+                        <div class="check"><input type="checkbox" checked></div>
+                        <div class="check">базовые знания</div>
+
+                        <div class="check"><input type="checkbox"></div>
+
+                        <div class="check"><input type="checkbox"></div>
+                        <div class="check"><input type="checkbox" checked></div>
+                    </div>
+                    <div class="html__checks-midl">
+                        <div class="check"><input type="checkbox" checked></div>
+                        <div class="check"><input type="checkbox" checked></div>
+
+                        <div class="check">продвинутые знания</div>
+
+                        <div class="check"><input type="checkbox" checked></div>
+                        <div class="check"><input type="checkbox" checked></div>
+                        <div class="check"><input type="checkbox" checked></div>
+                    </div>
+                </div>
+                <div class="css">
+                    <div class="css__title">CSS</div>
+                    <div class="css__skills">
+                        <div class="skill">Сетки (Flex, Grid)</div>
+                        <div class="skill">Работа со шрифтами</div>
+                        <div class="skill">Препроцессоры SASS, Less, PostCSS</div>
+                        <div class="skill">Методологии БЭМ</div>
+                        <div class="skill">Фреймфорк Bootsdivap</div>
+                        <div class="skill">Фреймфорк Tailwind CSS</div>
+                    </div>
+                    <div class="css__checks_jun">
+                        <div class="check"><input type="checkbox" checked></div>
+                        <div class="check">Вариативные шрифты</div>
+                        <div class="check"><input type="checkbox"></div>
+                        <div class="check"><input type="checkbox" checked></div>
+                        <div class="check"><input type="checkbox" checked></div>
+                        <div class="check"><input type="checkbox"></div>
+                    </div>
+                    <div class="css__checks_midl">
+                        <div class="check"><input type="checkbox" checked></div>
+                        <div class="check">Оптимизация шрифтов</div>
+                        <div class="check"><input type="checkbox" checked></div>
+                        <div class="check"><input type="checkbox" checked></div>
+                        <div class="check"><input type="checkbox" checked></div>
+                        <div class="check"><input type="checkbox" checked></div>
+                    </div>
+                </div>
+                <div class="js">
+                    <div class="js__title">JavaScript</div>
+                    <div class="js__skills">
+                        <div class="skill">Базовый синтаксис и конструкции</div>
+                        <div class="skill">React</div>
+                        <div class="skill">TypeScript</div>
+                        <div class="skill">StateManagemt (Redux, Mobx)</div>
+                        <div class="skill">SSR (Next.js)</div>
+                    </div>
+                    <div class="js__checks_jun">
+                        <div class="check"><input type="checkbox"></div>
+                        <div class="check"><input type="checkbox" checked></div>
+                        <div class="check"><input type="checkbox" checked></div>
+                        <div class="check"><input type="checkbox"></div>
+                        <div class="check"><input type="checkbox"></div>
+                    </div>
+                    <div class="js__checks_midl">
+                        <div class="check"><input type="checkbox" checked></div>
+                        <div class="check"><input type="checkbox" checked></div>
+                        <div class="check"><input type="checkbox" checked></div>
+                        <div class="check"><input type="checkbox" checked></div>
+                        <div class="check"><input type="checkbox" checked></div>
+                    </div>
+                </div>
+                <div class="table__total">Итого:</div>
+                <div class="table__total_jun">опыт < 1 года</div>
+                <div class="table__total_midl">опыт 1 - 3 года</div>
+            </div>
         </section>
-        <section>
-            <h2>Статьи</h2>
-            <hr>
-            <article>
-                <h3>С ЧЕГО НАЧАТЬ ПУТЬ REACT-РАЗРАБОТЧИКУ</h3>
+        <section class="section">
+            <h2 class="section__title">Статьи</h2>
+            <article class="article">
+                <h3 class="article__title">С ЧЕГО НАЧАТЬ ПУТЬ REACT-РАЗРАБОТЧИКУ</h3>
                 <p>React — это библиотека JavaScript с открытым кодом для создания внешних пользовательских интерфейсов.
                     Особенностью данной библиотеки является компонентный подход, что позволяет создавать крупные модули
                     из более мелких и изолированных компонентов.</p>
 
                 <p>В этой статье мы разберем, кто такой React-разработчик, какие hard- и soft-скиллы ему необходимы.
                 </p>
-                <h4>КТО ТАКОЙ REACT-РАЗРАБОТЧИК</h4>
+                <h4 class="article__title">КТО ТАКОЙ REACT-РАЗРАБОТЧИК</h4>
                 <p>React-разработчик — это специалист в области frontend-разработки, который занимается созданием
                     приложений для десктопных и мобильных устройств.</p>
                 <p>В задачи React-разработчика входит:</p>
-                <ul>
+                <ul class="section__ul">
                     <li>Разработка и улучшение интерактивных приложений;</li>
                     <li>Создание / обновление интерфейсов на основе готовых макетов;</li>
                     <li>Тестирование приложений, исправление ошибок;</li>
                     <li>Взаимодействие со всей командой разработки ПО: backend, дизайнеры, аналитики.</li>
                 </ul>
-                <h4>КАКИЕ HARD И SOFT-СКИЛЛЫ НУЖНЫ REACT-РАЗРАБОТЧИКУ</h4>
-                <h5>Hard Skills</h5>
+                <h4 class="article__title">КАКИЕ HARD И SOFT-СКИЛЛЫ НУЖНЫ REACT-РАЗРАБОТЧИКУ</h4>
+                <h5 class="article__title">Hard Skills</h5>
                 <p>Основы. Для каждого разработчика вне зависимости от стека есть база, которую необходимо изучить: </p>
-                <ul>
+                <ul class="section__ul">
                     <li>Способы организации взаимодействия с сетью (REST, HTTP, UDP, TCP);</li>
                     <li>Системы контроля версий Git — позволяют вносить изменения в рабочих файлах;</li>
                     <li>Методологии программирования (ООП, функциональное программирование);</li>
@@ -187,7 +172,7 @@
                         деревья, графы).</li>
                 </ul>
                 <p>Что касается конкретно React, то разработчик должен знать обязательную базу: </p>
-                <ul>
+                <ul class="section__ul">
                     <li>Браузерные хранилища данных, DOM, критический путь рендера;</li>
                     <li>HTML — язык гипертекстовой разметки;</li>
                     <li>CSS — описание внешнего вида;</li>
@@ -197,7 +182,7 @@
                     <li>Хуки, жизненный цикл компонента, рендер, Virtual DOM.</li>
                 </ul>
                 <p>Если хорошо закреплена база, то можно приступать к изучению более сложных технологий, таких как:</p>
-                <ul>
+                <ul class="section__ul">
                     <li>Использование различных типов рендера (CSR, SSR, SSG, ISR);</li>
                     <li>TypeScript — типизированный язык программирования;</li>
                     <li>Сборки проекта — Webpack, Vite, Rollup.</li>
@@ -207,13 +192,13 @@
                 <p>Стоит учесть, что React — это механизм для построения и рендера приложения, и он не содержит в себе
                     остальные необходимые инструменты для frontend-разработки.</p>
                 <p>Дополнительно будет хорошо, если вы знаете:</p>
-                <ul>
+                <ul class="section__ul">
                     <li>IDE — WebStorm (платный вариант), Visual Studio Code;</li>
                     <li>UX/UI — умение взаимодействовать с Figma / Pixco;</li>
                     <li>Английский — must have уметь читать технические документации, т.к большинство информации на
                         английском языке.</li>
                 </ul>
-                <h4>Soft Skills</h4>
+                <h4 class="article__title">Soft Skills</h4>
                 <p><em>Навыки самостоятельного обучения.</em> Frontend-разработка, в частности React, непрерывно растет,
                     постоянно обновляются старые библиотеки и появляются новые. Разработчику нужно быть усидчивым,
                     изучать новые фичи и уметь подстраиваться под изменения в работе.</p>
@@ -223,20 +208,19 @@
                     профессии (аналитики, дизайнеры, backend-разработчики, project-manager). А также уметь предлагать и
                     отстаивать свои решения, не забывая принимать критику со стороны.</p>
             </article>
-            <hr>
-            <article>
-                <h3>ЛАЙФХАКИ ПРИ ИЗУЧЕНИИ REACT</h3>
+            <article class="article">
+                <h3 class="article__title">ЛАЙФХАКИ ПРИ ИЗУЧЕНИИ REACT</h3>
                 <p>Классовые и функциональные компоненты, работа с хуками, инструменты для правильного оформления кода и
                     лайфхаки для его оптимизации — наши преподаватели поделились полезными советами, которые помогут
                     вам, если вы только начинаете изучать React. </p>
-                <h4>Необходимо ознакомиться с синтаксисом, ещё лучше написать несколько классовых компонент</h4>
+                <h4 class="article__title">Необходимо ознакомиться с синтаксисом, ещё лучше написать несколько классовых компонент</h4>
                 <p>Классовые компоненты лучше показывают принцип работы жизненного цикла компоненты, чем функциональные.
                     Также можно почитать про большое количество важных конструкций JS, таких как class, extend, super,
                     constructor и прочее. </p>
                 <p>Считается, что это устаревшие технологии, но при реальной работе на них можно периодически
                     наткнуться. Потому что есть кейсы, когда только классовые компоненты могут реализовать какую-то
                     специальную логику.</p>
-                <h4>Разбивайте хуки на несколько, чтобы повысить читаемость кода</h4>
+                <h4 class="article__title">Разбивайте хуки на несколько, чтобы повысить читаемость кода</h4>
                 <p>Если у вас есть много логики, которая компонента должна выполнять в хуке, и часть этой логики никак
                     не связана с другой, то лучше разбить это на несколько хуков. </p>
                 <p>Так увеличится читаемость кода, а также уменьшится количество лишних срабатываний хука.</p>
@@ -244,32 +228,31 @@
                 <p>Не надо бояться разбивать большие блоки. Намного проще работать с самостоятельной компонентой,
                     которая решает 1-2 задачи, чем с огромным блоком, который реализовывает в себе большую часть
                     приложения</p>
-                <h4>Выносите из компоненты статичные данные</h4>
+                <h4 class="article__title">Выносите из компоненты статичные данные</h4>
                 <p>Так как при каждом ререндере компоненты (то есть при вызовы функции) эти данные будут заново
                     инициализироваться.</p>
                 <p>Данные за компонентой, во-первых, повысят читаемость кода (особенно если оформить ее как upper snake
                     case), а во-вторых, немного увеличат производительность.</p>
-                <h4>Чтобы код был оформлен по правилам, используйте специальные инструменты</h4>
+                <h4 class="article__title">Чтобы код был оформлен по правилам, используйте специальные инструменты</h4>
                 <p>С ними лучше ознакомиться как можно раньше, так как структурированный код помогает в обучении. Самый
                     частый пример использования инструментов — пара Prettier + ESLint.</p>
                 <p>ESLint в себе содержит заранее сформированные наборы правил, которые можно использовать — лучше всего
                     для обучения подходит подготовленная конфигурация с правилами от команды Airbnb.</p>
             </article>
-            <hr>
-            <article>
-                <h3>Фронтенд-разработка: чем занимаются и сколько зарабатывают специалисты</h3>
+            <article class="article">
+                <h3 class="article__title">Фронтенд-разработка: чем занимаются и сколько зарабатывают специалисты</h3>
                 <p><i>Профессия фронтенд-разработчика сейчас в числе самых востребованных в IT. Разбираем базовые
                         вопросы для тех, кто планирует стать фронтенд-разработчиком.</i></p>
                 <p>Для тех, кто хочет вкатиться в сферу, разобрали основные вопросы и рассказали, на что стоит обращать
                     внимание начинающим специалистам.</p>
-                <h4>Чем занимаются фронтенд-разработчики</h4>
+                <h4 class="article__title">Чем занимаются фронтенд-разработчики</h4>
                 <p>Фронтенд-разработчик пишет интерфейс — ту часть сайта или приложения, с которой взаимодействуют
                     пользователи. Задача специалиста — сделать его максимально понятным и комфортным для них.</p>
                 <p>Фронтендер отвечает за то, чтобы все элементы интерфейса были на своих местах и работали как надо:
                     меню, кнопки и формы обратной связи, корзины, карточки товаров (и это далеко не весь список).</p>
-                <h4>Какие навыки нужны специалистам</h4>
+                <h4 class="article__title">Какие навыки нужны специалистам</h4>
                 <p>Самый распространенный список хард скиллов выглядит так:</p>
-                <ul>
+                <ul class="section__ul">
                     <li>HTML — формирование структуры страницы;</li>
                     <li>CSS — добавление цветов, позиционирование элементов, анимации и прочее.</li>
                     <li>JavaScript и TypeScript — добавление «интерактивности», элементов, которые решают задачи
@@ -279,20 +262,19 @@
                 <p>Еще фронтенд-разработчику нужны софт-скиллы. Среди них умение копать вглубь, разбираться в сути задач
                     как с точки зрения бизнеса, так и пользователей и умение работать в команде.</p>
             </article>
-            <hr>
         </section>
     </main>
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="#introduction">Введение</a></li>
-                <li><a href="#tools">Инструменты</a></li>
-                <li><a href="#languages">Языки</a></li>
-                <li><a href="./second_page.html">Перейти на 2ю страницу</a></li>
-                <li><a href="./third_page.html">Оставить комментарий</a></li>
+    <footer class="footer">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list-item"><a href="#introduction">Введение</a></li>
+                <li class="nav__list-item"><a href="#tools">Инструменты</a></li>
+                <li class="nav__list-item"><a href="#languages">Языки</a></li>
+                <li class="nav__list-item"><a href="./second_page.html">Перейти на 2ю страницу</a></li>
+                <li class="nav__list-item"><a href="./third_page.html">Оставить комментарий</a></li>
             </ul>
         </nav>
-        <address>
+        <address class="address">
             email: <a href="mailto: dante9990@mail.ru">dante9990@mail.ru</a>
         </address>
     </footer>

@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+body {
+    width: 1440px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+p {
+    font-size: 18px;
+}
+
+.header,
+.footer {
+    background: #038cfc;
+}
+
+.nav {
+    width: 100%;
+}
+
+.nav__list {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(5, 20%);
+}
+
+.nav__list-item {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.nav__list-item:hover {
+    background: #0a5fa5;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    background: #0a5fa5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.title {
+    font-size: 26px;
+    align-self: center;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #038cfc;
+}
+
+.section__title {
+    font-size: 22px;
+}
+
+.section__ul {
+    list-style-image: url("./../img/icons/Vector.svg");
+    padding-left: 40px;
+}
+
+.section__ol {
+    padding-left: 40px;
+}
+
+.table {
+    align-self: center;
+    width: 1000px;
+    border: 2px solid #038cfc;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "tts tts ttj ttm"
+        "html html html html"
+        "css css css css"
+        "js js js js"
+        "tt tt tj tm";
+}
+
+.table__title_skills,
+.table__title_jun,
+.table__title_midl {
+    border: 2px solid #038cfc;
+    text-align: center;
+}
+
+.skill,
+.check {
+    border: 2px solid #038cfc;
+}
+
+.check {
+    text-align: center;
+}
+
+.html__title,
+.css__title,
+.js__title {
+    border: 2px solid #038cfc;
+    text-align: center;
+    padding-top: 50%;
+}
+
+.table__total,
+.table__total_jun,
+.table__total_midl {
+    border: 2px solid #038cfc;
+    text-align: center;
+}
+
+.table__title_skills {
+    grid-area: tts;
+}
+
+.table__title_jun {
+    grid-area: ttj;
+}
+
+.table__title_midl {
+    grid-area: ttm;
+}
+
+.html,
+.css,
+.js {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1fr 1fr;
+}
+
+.html {
+    grid-area: html;
+}
+
+.css {
+    grid-area: css;
+}
+
+.js {
+    grid-area: js;
+}
+
+.table__total {
+    grid-area: tt;
+}
+
+.table__total_jun {
+    grid-area: tj;
+}
+
+.table__total_midl {
+    grid-area: tm;
+}
+
+.article {
+    border-bottom: 4px solid #038cfc;
+}
+
+.article:last-child {
+    border-bottom: none;
+}
+
+.article__title {
+    margin-bottom: 10px;
+}
+
+.article > p {
+    margin-bottom: 10px;
+}
+
+.article > .section__ul {
+    margin-bottom: 10px;
+}
+
+.address {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.address > a:hover {
+    text-decoration: underline;
+}
+
+.section__second {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.img {
+    width: 500px;
+    align-self: center;
+    margin: 10px 0;
+}
+
+.form {
+    background: #038cfc;
+    width: 500px;
+    align-self: center;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.btn {
+    width: 200px;
+    align-self: center;
+}
